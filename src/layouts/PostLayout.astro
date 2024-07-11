@@ -1,0 +1,15 @@
+---
+import Layout from "./Layout.astro";
+
+const {title, pubDate, description, author} = Astro.props.frontmatter;
+
+---
+<Layout title="titulo post blog" description="descripcion blog post">
+  <h1>{title}</h1>
+  <p>artículo publicado el día: {pubDate.substring(0,10)}</p>
+  <p>Escrito por {author}</p>
+  <p>Resumen: {description}</p>
+  <div class="prose">
+    <slot />
+  </div>
+</Layout>

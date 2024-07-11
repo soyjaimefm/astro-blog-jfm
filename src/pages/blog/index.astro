@@ -1,0 +1,14 @@
+---
+import Card from "../../components/Card.astro"
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout title="Blog astro JFM." description="Índice del blog">
+  <h1 class="text-xl text-red-500 mb-4 font-semibold">Página Blog</h1>
+  <p class="my-4">Listado de artículos del blog:</p>
+  <div class="flex gap-3 my-4">
+    <Card title="titulo 1" description="descrición 1" href="/blog/post-1/"/>
+    <Card title="titulo 2" href="/blog/post-2/"/>
+    <Card title="titulo 3" href="/blog/post-3/"/>
+  </div>
+</Layout>
